@@ -1,0 +1,14 @@
+ docker run -it ubuntu bash
+root@3b7343e23423:/# mkdir usr
+mkdir: cannot create directory 'usr': File exists
+root@3b7343e23423:/# cd usr/src/app
+bash: cd: usr/src/app: No such file or directory
+root@3b7343e23423:/# cd usr
+root@3b7343e23423:/usr# cd src
+root@3b7343e23423:/usr/src# cd app
+bash: cd: app: No such file or directory
+root@3b7343e23423:/usr/src# mkdir app
+root@3b7343e23423:/usr/src# cd app
+root@3b7343e23423:/usr/src/app# touch index.js
+root@3b7343e23423:/usr/src/app# exit
+exit
